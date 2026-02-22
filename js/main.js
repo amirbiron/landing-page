@@ -104,11 +104,6 @@ document.querySelectorAll('.cta-btn-primary, .cta-btn-large, .pricing-btn').forE
         this.appendChild(ripple);
 
         setTimeout(() => ripple.remove(), 600);
-
-        // Handle demo request (you can customize this)
-        if (this.textContent.includes('הדגמה') || this.textContent.includes('התחל')) {
-            handleDemoRequest();
-        }
     });
 });
 
