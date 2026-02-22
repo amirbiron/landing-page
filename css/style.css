@@ -911,6 +911,78 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: var(--shadow-glow);
 }
 
+.trial-badge {
+    background: var(--success);
+    color: white;
+    padding: 0.4rem 1.2rem;
+    border-radius: 20px;
+    font-weight: var(--font-weight-semibold);
+    font-size: 0.85rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.pricing-card.featured .trial-badge {
+    margin-top: 1rem;
+}
+
+.price-prefix {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+}
+
+/* =========================
+   New Features Section
+   ========================= */
+
+.new-features-section {
+    background: var(--darker-bg);
+}
+
+.new-features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.new-feature-card {
+    background: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.new-feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-purple);
+}
+
+.new-feature-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+    background: rgba(124, 58, 237, 0.15);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: var(--primary-purple);
+}
+
+.new-feature-title {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.new-feature-desc {
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
 /* =========================
    CTA Section
    ========================= */
@@ -1118,7 +1190,8 @@ h1, h2, h3, h4, h5, h6 {
     .business-grid,
     .tech-grid,
     .testimonials-grid,
-    .pricing-grid {
+    .pricing-grid,
+    .new-features-grid {
         grid-template-columns: 1fr;
     }
 
