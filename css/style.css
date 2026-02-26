@@ -1146,12 +1146,16 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 1024px) {
     .hero .container {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         text-align: center;
     }
 
     .hero-image {
         order: -1;
+        max-width: 320px;
+        width: 100%;
+        margin: 0 auto;
     }
 
     .hero-cta {
@@ -1171,6 +1175,10 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 768px) {
     html {
         font-size: 14px;
+    }
+
+    .container {
+        padding: 0 1.5rem;
     }
 
     .nav-menu {
@@ -1228,11 +1236,11 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .pricing-card.featured {
-        transform: scale(1);
+        transform: none;
     }
 
     .pricing-card.featured:hover {
-        transform: scale(1.02) translateY(-10px);
+        transform: translateY(-10px);
     }
 
     .cta-title {
@@ -1265,8 +1273,9 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .phone-mockup {
-        width: 240px;
-        height: 490px;
+        width: 260px;
+        height: 520px;
+        padding: 10px;
     }
 
     .hero-stats {
