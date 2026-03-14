@@ -940,7 +940,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .launch-prices-badge {
-    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    background: var(--gradient-primary);
     color: white;
     padding: 0.5rem 1.5rem;
     border-radius: 25px;
